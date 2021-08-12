@@ -26,29 +26,25 @@ class Leaderboard extends React.Component {
     }
 
   userList() {
+    console.log("User list!");
     return $.ajax({
       type: 'GET',
       url: 'http://10.1.204.191:5000/get_ratings',
       success: (data) => {
-        let arr = []
-        for (const [key, val] of Object.entries(JSON.parse(data))) {
-          arr.push({name: key, score: val})
-        }
-        this.setState({users: arr});
-        
+        console.log(data);
+        this.setState({users: data});
       },
       error: (jqXHR, textstatus, errorThrown) => {
         console.log(errorThrown);
         console.log('error');
       }
   });
-
 }
 
   render() {
     return(
       <div className="Leaderboard">
-        <div className="Title">Ping Pong Leaderboard</div>
+        <div className="Title">Witness Leaderboard</div>
         <Users users={this.state.users} />
       </div>
     );
@@ -57,5 +53,5 @@ class Leaderboard extends React.Component {
 
 ReactDOM.render(
   <Leaderboard />,
-  document.getElementById('Leaderboard')
+  document.getElementById('root')
 );

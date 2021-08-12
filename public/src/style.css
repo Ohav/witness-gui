@@ -1,0 +1,118 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:400,700";
+body {
+  background: #EEEEEE;
+}
+
+#leaderboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.Leaderboard {
+  font-family: 'Roboto Mono', monospace;
+  width: 30% ;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  margin:auto;
+}
+.Leaderboard .Title {
+  padding: 20px;
+  background: #4b78f9;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Leaderboard ul {
+  padding: 20px;
+}
+.Leaderboard .Person {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.Leaderboard .Person:hover {
+  background:aliceblue;
+  border-radius:20px;
+
+}
+
+
+.Leaderboard .Person:nth-child(2) {
+  margin-bottom: 15px;
+  background-color:rgb(255, 215, 0, 0.25);
+  border-radius:20px;
+}
+
+.Leaderboard .Person:nth-child(2) .Image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-size:22px;
+  background-color: rgb(255, 215, 0);
+}
+
+.Leaderboard .Person:nth-child(3) {
+  background-color: rgb(192, 192, 192, 0.25);
+  border-radius:20px;
+}
+
+.Leaderboard .Person:nth-child(3) .Image {
+  -webkit-transform:scale(1.1);
+          transform: scale(1.1);
+  font-size:20px;
+  background:silver;
+}
+
+.Leaderboard .Person:nth-child(4) {
+  background-color: rgb(184, 134, 11, 0.25);
+  border-radius:20px;
+}
+
+.Leaderboard .Person:nth-child(4) .Image {
+  -webkit-transform:scale(1);
+          transform: scale(1);
+  font-size:18px;
+  background:darkgoldenrod;
+}
+
+.Leaderboard .Person:last-child {
+  margin-bottom: 0;
+}
+
+
+.Leaderboard .Person .Image {
+  height: 44px;
+  width: 44px;
+  line-height:44px;
+  font-size:16px;
+  text-align:center;
+  background: #7edbf9;
+  border-radius: 44px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+ }
+
+
+.Leaderboard .Person .Name {
+  margin-left: 10px;
+  padding-left:10px;
+}
+.Leaderboard .Person .Score {
+  margin-left: auto;
+  font-weight: 700;
+  padding-right:20px;
+}

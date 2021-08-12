@@ -5,9 +5,9 @@ const Users = ({users}) => (
 	<ul>
 		<li className="Person">
 			<div className="Name">Name</div>
-			<div className="Score">ELO Rating</div>
+			<div className="Score">Score</div>
 		</li>
-		{users.map(user => <User key={users.indexOf(user)} name={user.name} score={user.score} position={users.indexOf(user) + 1}/> )}
+		{users.map(user => <User name={user.name} score={user.score} position={users.indexOf(user) + 1}/> )}
 	</ul>
   
 );
